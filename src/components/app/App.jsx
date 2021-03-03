@@ -12,19 +12,21 @@ class App extends React.Component {
         initialValue="<p>This is the initial content of the editor</p>"
         init={{
           height: 500,
-          menubar: false,
+          menubar: 'insert',
           plugins: [
             'advlist autolink lists link image charmap print preview anchor',
+            'image',
             'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
+            'insertdatetime media table paste code help wordcount'f
           ],
           toolbar:
             'undo redo | formatselect | bold italic backcolor | \
             alignleft aligncenter alignright alignjustify | \
-            bullist numlist outdent indent | removeformat | help'
+            bullist numlist outdent indent | removeformat | help | image'
         }}
         onEditorChange={this.handleEditorChange}
       />
+      co
     );
   }
 }
